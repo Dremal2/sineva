@@ -1,0 +1,99 @@
+﻿.header{
+    margin-top: 15px;
+    position: absolute;
+    height: 7vw;
+    z-index: 999;
+    width: 100%;
+    color: #fff;
+    font-family: Mons;
+}
+.header-container{
+    display: flex;
+    font-size: 2vh;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+    background: transparent;
+}
+.header-logo{
+    display: flex;
+    text-align: center;
+}
+.header-logo p{
+    display: flex;
+    align-items: center;
+}
+.header-logo img{
+    width: 10vh;
+}
+.header-list ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.burger-icon{
+    display: none;
+}
+.list-ul a{
+    text-decoration: none;
+    color: #fff;
+}
+.list-ul a::after{
+    content: '';
+    display: block;
+    bottom: -1px;
+    right: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: rgb(189, 181, 181);
+    transition: width 0.5s ease;
+}
+.list-ul a:hover:after{
+    content: '';
+    width: 100%;
+    left: 0;
+    height: 0.5px; 
+    background-color: rgb(201, 184, 184); 
+    transition: width 0.5s ease; 
+}
+
+@media screen and (max-width: 798px) {
+    .header-container{
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+    .header-list{
+        display: none;
+    }
+    .burger-icon{
+        display: flex;
+        width: 30px;
+        height: 30px;
+    }
+    .header-list.active {
+        display: flex; /* Или block, если нужно вертикальное меню */
+        flex-direction: column; /* Для вертикального списка */
+        background-color: transparent; /* Цвет фона */
+        position: absolute; /* Чтобы меню было поверх */
+        justify-content: center;
+        align-items: center;
+        top: 50px; /* Смещение вниз */
+        right: 0; /* Привязка к правой стороне */
+        width: 100%; /* На всю ширину */
+        margin-top: 10px;
+        z-index: 100; /* Поверх других элементов */
+    }
+    .list-ul a{
+        color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    } 
+    
+    .burger-icon {
+        cursor: pointer;
+    }
+}

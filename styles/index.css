@@ -1,0 +1,14 @@
+﻿*, body{
+    padding: 0;
+    margin: 0;
+    font-family: Mons;
+}
+:root{
+    --color-what: rgb(97, 211, 139);
+    
+}
+
+@font-face {
+    font-family: Mons;
+    src: url(../fonts/Montserrat-VariableFont_wght\ —\ копия\ —\ копия\ —\ копия.ttf);
+}

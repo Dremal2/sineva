@@ -1,0 +1,50 @@
+﻿.main-container{
+  background-image: url(../images/wallmain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    padding-top: 200px;
+    color: #ffffff;
+    padding-left: 100px;
+} 
+  .main-text h1{
+    font-size: 4em;
+    font-family: Mons;
+}
+.main-text span{
+    color: var(--color-what);
+    font-size: 1em;
+}
+.main-text h2{
+  font-weight: normal;
+  font-size: 2em;
+  margin-top: 20px;
+}
+.under-main-text h3{
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 794px) {
+  .main-text h1{
+    font-size: 1em;
+  }
+  .main-text h2{
+    font-size: 0.7em;
+    margin-top: 10px;
+  }
+  .under-main-text h3{
+    margin-top: 10px;
+    font-size: 0.7em;
+    font-weight: 400;
+  }
+  .main-container{
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0px;
+    text-align: center;
+  }
+}

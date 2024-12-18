@@ -1,0 +1,149 @@
+﻿.nav{
+    background: #000;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+}
+.nav-container img{
+    width: 30vh;
+    height: 50vh;
+}
+.first,
+.second,
+.third,
+.fourth{
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30vh;
+    height: 50vh;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: #fff;
+
+}
+.first:hover,
+.second:hover,
+.third:hover,
+.fourth:hover{
+    transform: translateY(10px);
+    transition: 1s ease;
+}
+.first:not(:hover),
+.second:not(:hover),
+.third:not(:hover),
+.fourth:not(:hover){
+    transition: 1s ease;
+}
+.second{
+    background-image: url(../images/2.jpg);
+}
+.third{
+    background-image: url(../images/3.jpg);
+}
+.fourth{
+    background-image: url(../images/4.jpg);
+}
+.first h2,
+.second h2,
+.third h2, 
+.fourth h2{
+    font-size: 4.2vh;
+}
+.first h3,
+.second h3,
+.third h3,
+.fourth h3{
+    margin-bottom: 40px;
+    font-size: 3vh;
+    font-weight: normal;
+}
+.ordered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15vh;
+}
+.ordered a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 3.5vh;
+}
+.ordered a:hover{
+    scale: 1.05;
+    transition: 2s ease;
+}
+.ordered a:not(:hover){
+    transition: 2s ease;
+}
+.ordered span{
+    color: var(--color-what);
+    margin: 0 1vh;
+}
+.ordered img{
+    width: 5vh;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 798px) {
+    .first,.second,.third,.fourth{
+        width: 15vh;
+        height: 25vh;
+    }
+    .nav-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        padding-bottom: 5vh;
+    }
+    .nav-container a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .first,
+    .third{
+        margin-left: 30px;
+    }
+    .second,
+    .fourth{
+        margin-right: 30px;
+    }
+    .ordered a{
+        font-size: 15px;
+    }
+    .ordered img{
+        width: 15px;
+        height: 15px;
+        margin-left: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+    .first h2,
+    .second h2,
+    .third h2, 
+    .fourth h2{
+        display: flex;
+        font-size: 3vh;
+    }
+    .first h3,
+    .second h3,
+    .third h3,
+    .fourth h3{
+    margin-bottom: 40px;
+    font-size: 2vh;
+    font-weight: normal;
+}
+}
